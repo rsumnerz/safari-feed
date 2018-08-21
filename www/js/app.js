@@ -622,4 +622,18 @@ function FastClick(b){var c,a=this;this.trackingClick=false;this.trackingClickSt
 		})
 	});
 
+	//Button actions
+	$('#update').on('click', function() {
+		if ($('.FillSection--info').hasClass('is-hidden')) {
+			$('.Comments').toggleClass('is-open');
+		} else {
+			$('.FillSection--info').addClass('is-hidden');
+			$('.Comments').addClass('is-open');
+		}
+	});
+
+	$('#settings').on('click', function() {
+		$('.FillSection--info').toggleClass('is-hidden');
+	});
+
 }(jQuery));
